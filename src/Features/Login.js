@@ -81,7 +81,7 @@ return (
          </form>
          <div className='exist'>
             <h2>
-               Dont Have an Account?{' '}
+               Dont Have an Account?
                <a href='/register'>
                <span className='span1'>Register</span>
                </a>
