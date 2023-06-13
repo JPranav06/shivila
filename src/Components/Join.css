@@ -1,0 +1,16 @@
+.join {
+  align-self: center;
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: 0.4em;
+  opacity: 1;
+  color: white;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    font-size: 14px;
+    padding: 0.3em;
+  }
+}

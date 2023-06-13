@@ -1,0 +1,171 @@
+.Register-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  background-color: #f0f3f5;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Register-container h3,
+h2,
+label,
+input,
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: #24374B;
+}
+
+.heading {
+  background-color: #f0f3f5;
+  text-align: left;
+  padding: 0.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Register-container .input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.Register-container .input-row label {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 160px; /* Adjust the width as needed */
+}
+
+.Register-container .input-row input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: left;
+  outline: none;
+  flex: 1;
+  width: 100%;
+}
+
+.Register-container #password,
+.Register-container #confirmPassword {
+  padding-left: 0; 
+}
+
+.Register-container #firstName,
+.Register-container #lastName,
+.Register-container #password,
+.Register-container #confirmPassword {
+  width: 100%; 
+}
+
+.Register-container input:focus {
+  border-color: skyblue;
+}
+
+.Register-container input::placeholder {
+  color: #999;
+}
+
+.Register-container input:not(:placeholder-shown) {
+  border-color: skyblue;
+}
+
+.Register-container input:focus:not(:placeholder-shown) {
+  border-color: skyblue;
+}
+
+.Register-container input:invalid {
+  border-color: red;
+}
+
+.Register-container input:valid {
+  border-color: green;
+}
+
+.Register-container button {
+  padding: 13px 26px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.Register-container button:hover {
+  background-color: #45a049;
+}
+
+.Register-container h2 {
+  margin-top: 20px;
+}
+
+.Register-container a {
+  color: blue;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.heading h3 {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.formcontainer {
+  margin-top: 2em;
+}
+
+.formcontainer label {
+  width: 100%;
+}
+
+.exist {
+  text-align: center;
+}
+
+.span1 {
+  color: #067eff;
+  font-family: Nunito, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+input:required {
+  border-color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+  .Register-container {
+    padding: 10px;
+  }
+
+  .Register-container .input-row label {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .Register-container .input-row {
+    width: 60%;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .Register-container {
+    padding: 5px;
+  }
+}

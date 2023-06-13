@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #fd287c, #ff7655);
+  padding: 1em;
+}
+
+.header h2,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.header-title {
+  margin-bottom: 1px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #7f352d;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+
+.list h5:hover {
+  color: white;
+}
+
+.list li {
+  margin-right: 10px;
+}
+
+.login-link {
+  color: #7f352d;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: white;
+}
+
+.login-icon:hover {
+  color: white;
+}
+
+.header h2 a {
+  text-decoration: none;
+  color: white;
+  font-family: 700 27px/1 Nunito, sans-serif;
+  max-width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5em;
+  }
+
+  .header h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .list {
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+  }
+
+  .list li {
+    margin-right:1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h2 a {
+    font-size: 20px;
+  }
+
+  .list {
+    font-size: 15px;
+  }
+}

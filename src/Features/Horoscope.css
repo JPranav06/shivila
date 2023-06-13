@@ -1,0 +1,62 @@
+.horoscope-details {
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 3em;
+    margin-left: 15em;
+    padding: 2em;
+    }
+    .horoscope-details-content{
+      background-color: white;
+      width: 100%;
+      margin-top:2em;
+    }
+    
+    .heading {
+      background-color: #f0f3f5;
+      text-align: left;
+      padding: 0.5em;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .detail-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+    
+    .form-group {
+      margin-top: 1em;
+      flex-basis: 30%;
+      color: black;
+    }
+    
+    .form-group label {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #172B4D;
+    }
+    
+    .form-group input[type='radio'] {
+      margin-right: 0.5em;
+    }
+    .form-group input[type='text'] {
+      padding:0.5em;
+    }
+    .reminder h2 {
+      animation: blink 2s infinite;
+      color: red;
+    }
+    
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }

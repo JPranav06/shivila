@@ -1,0 +1,3 @@
+export const STORE_PERSONAL_DETAILS = 'STORE_PERSONAL_DETAILS';
+
+    

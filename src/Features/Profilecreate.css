@@ -1,0 +1,130 @@
+.Profilecreatepage {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  background-color: #f0f3f5;
+}
+
+.personaldetails {
+  background-color: white;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 15em;
+  padding: 2em;
+}
+.form-group input[type='text'] {
+  padding:0.5em;
+}
+
+.heading {
+  background-color: #f0f3f5;
+  text-align: left;
+  padding: 0.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3em;
+}
+
+.detailform {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.form-group label{
+  flex-basis: 30%;
+  color: #172B4D RGB(23, 43, 77);
+  font-family:
+  Georgia,"Times New Roman",Times,serif
+  100.0%;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+word-spacing: 0px;
+}
+
+.form-group select {
+  width:100%;
+  background-color: #f0f3f5;
+  padding: 0.3em;
+  color: black;
+  font-weight: 400;
+  padding:1em;
+  width:15em;
+}
+
+#profilename {
+  width: 50%; /* Adjust the width as desired */
+  color: silver;
+  font-weight: 700; /* Change the color to your preferred color */
+}
+
+#url1{
+  color: black;
+}
+.form-group label{
+  font-family:
+Georgia
+"Times New Roman"
+Times
+serif;
+font-weight: 400;
+font-size: 16px;
+color: #172B4D
+}
+.form-group input[type='text']{
+  width: 50%;
+};
+.profilegroup{
+  float: left;
+}
+.profilegroup input[type='text'] {
+  width:60% !important;
+  padding: 1em;
+}
+.personalsave {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.save {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #45a049;
+}
+
+.save:active {
+  background-color: #3e8e41;
+}
+.profilegroup select {
+  background-color: #f0f3f5;
+  padding: 0.3em;
+  color: black;
+  font-weight: 400;
+  padding:1em;
+  width:15em;
+}
+.reminder h2 {
+  animation: blink 2s infinite;
+  color: red;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
