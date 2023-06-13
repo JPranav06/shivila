@@ -8,6 +8,7 @@ import Bride from './Section/Bride';
 import Groom from './Section/Groom';
 import Details from './Features/Details';
 
+
 const App = () => {
   return (
     <Router>

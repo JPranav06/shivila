@@ -3,7 +3,7 @@ import Profilecreate from './Profilecreate';
 import Horoscope from './Horoscope';
 import Educationdetails from './Educationdetails';
 import FamilyDetails from './FamilyDetails';
-import Expectations from './Expectations';
+import Expectationss from './Expectationss';
 import './ProfileDetails.css';
 
 const ProfileDetails = () => {
@@ -13,7 +13,7 @@ const ProfileDetails = () => {
         <Horoscope/>
         <Educationdetails/>
         <FamilyDetails/>
-        <Expectations/>
+        <Expectationss/>
       </div>
   );
 }
