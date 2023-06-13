@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {useParams } from 'react-router-dom';
+
 import './Profilecreate.css';
 import Header from '../Components/Header';
 
 const Profilecreate = () => {
-  const { profileName } = useParams();
+
 
   const [inputValue, setInputValue] = useState("");
   const [weight, setWeight] = useState(0);
@@ -91,6 +91,14 @@ const casteOptions = ['Select', 'Adaviyar', 'Agri', 'Ahirwar', 'Ahluwalia', 'Ahl
   if (storedFormData) {
     storedData = JSON.parse(storedFormData);
   }
+
+  else {
+    storedData = null; 
+  }
+  
+
+  console.log(storedData);
+  
 
   return (
     <div className='Profilecreatepage'>
