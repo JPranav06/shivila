@@ -125,7 +125,7 @@ const Educationdetails = () => {
               onChange={handleWorkLocationChange}
             />
           </div>
-          <div className='profilegroup'>
+          <div className='profilegroup1'>
             <label htmlFor='nri'>NRI</label>
             <br />
             <br />
