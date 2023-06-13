@@ -2,24 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, connect } from 'react-redux';
 import { storeFamilyDetails } from '../Stores/FamilyDetailsActions';
 import './FamilyDetails.css';
-import { useNavigate } from 'react-router-dom';
+
 
 const FamilyDetails = ({ familyDetails }) => {
-   // eslint-disable-next-line no-unused-vars   
   const [familydata, setFamilyData] = useState({});
 
   useEffect(() => {
-   // Retrieve form data from local storage
-   const storedData = localStorage.getItem('familydata');
-   if (storedData) {
-     setFamilyData(JSON.parse(storedData));
-   }
- }, []);
+    const storedData = localStorage.getItem('familydata');
+    if (storedData) {
+      setFamilyData(JSON.parse(storedData));
+    }
+  }, []);
 
   const [MarriedSisters, setMarriedSisters] = useState(0);
-  const [UnmarriedSisters, setUnMarriedSisters] = useState(0);
+  const [UnmarriedSisters, setUnmarriedSisters] = useState(0);
   const [MarriedBrothers, setMarriedBrothers] = useState(0);
-  const [UnmarriedBrothers, setUnMarriedBrothers] = useState(0);
+  const [UnmarriedBrothers, setUnmarriedBrothers] = useState(0);
   const [FatherAlive, setFatherAlive] = useState('');
   const [FatherName, setFatherName] = useState('');
   const [FatherOccupation, setFatherOccupation] = useState('');
@@ -35,14 +33,14 @@ const FamilyDetails = ({ familyDetails }) => {
   const [RelativesSurname, setRelativesSurname] = useState('');
 
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+
 
   const handleMarriedSisters = (e) => {
     setMarriedSisters(parseInt(e.target.value));
   };
 
   const handleUnMarriedSisters = (e) => {
-    setUnMarriedSisters(parseInt(e.target.value));
+    setUnmarriedSisters(parseInt(e.target.value));
   };
 
   const handleMarriedBrothers = (e) => {
@@ -50,7 +48,7 @@ const FamilyDetails = ({ familyDetails }) => {
   };
 
   const handleUnMarriedBrothers = (e) => {
-    setUnMarriedBrothers(parseInt(e.target.value));
+    setUnmarriedBrothers(parseInt(e.target.value));
   };
 
   const handleFatherAlive = (e) => {
@@ -94,45 +92,43 @@ const FamilyDetails = ({ familyDetails }) => {
   };
 
   const handleFamilyWealth = (e) => {
-   setFamilyWealth(e.target.value);
- };
+    setFamilyWealth(e.target.value);
+  };
 
- const handleCurrentLocation = (e) => {
-   setCurrentLocation(e.target.value);
- };
+  const handleCurrentLocation = (e) => {
+    setCurrentLocation(e.target.value);
+  };
 
- const handleRelativesSurname = (e) => {
-   setRelativesSurname(e.target.value);
- };
+  const handleRelativesSurname = (e) => {
+    setRelativesSurname(e.target.value);
+  };
 
- const handleSubmit = (e) => {
-   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-   // Create an object with the form data
-   const data = {
-     MarriedSisters,
-     UnmarriedSisters,
-     MarriedBrothers,
-     UnmarriedBrothers,
-     FatherAlive,
-     FatherName,
-     FatherOccupation,
-     MotherAlive,
-     MotherName,
-     MotherOccupation,
-     ParentsLivingTogether,
-     InterCastMarriage,
-     MamasName,
-     NativePlace,
-     FamilyWealth,
-     CurrentLocation,
-     RelativesSurname,
-   };
-   navigate('/profile/create');
-   localStorage.setItem('familydata', JSON.stringify(data));
-   console.log(data)
-   dispatch(storeFamilyDetails(data));
- };
+    const familyData = {
+      MarriedSisters,
+      UnmarriedSisters,
+      MarriedBrothers,
+      UnmarriedBrothers,
+      FatherAlive,
+      FatherName,
+      FatherOccupation,
+      MotherAlive,
+      MotherName,
+      MotherOccupation,
+      ParentsLivingTogether,
+      InterCastMarriage,
+      MamasName,
+      NativePlace,
+      FamilyWealth,
+      CurrentLocation,
+      RelativesSurname,
+    };
+
+    dispatch(storeFamilyDetails(familyData));
+    localStorage.setItem('familydata', JSON.stringify(familyData));
+  };
 
 return (
 <div className='family-details'>
@@ -226,19 +222,19 @@ return (
             <input type='text' name='relativessurname' id='relativessurname' placeholder="Comma seperated Relatives Surname (Bhosale,Khale,Tendulkar,etc)" onChange={handleRelativesSurname}/>
          </div>
          <div className='form-group1'>
-            <label htmlFor='unmarriedbrothers'>Unmarried Brothers</label><br/><br/>
-            <div className='unmarriedbrothers'>
+  <label htmlFor='marriedbrothers'>Married Brothers</label><br/><br/>
+  <div className='marriedsisters'>
+    <input 
+      type='number' 
+      name='marriedbrothers' 
+      id='marriedbrothers' 
+      placeholder="Enter Number"
+      value={MarriedBrothers}
+      onChange={handleMarriedBrothers}
+    />
+  </div>
+</div>
 
-            </div>
-            <input 
-               type='number' 
-               name='unmarriedbrothers' 
-               id='unmarriedbrothers' 
-               placeholder="Enter Number"
-               value={UnmarriedBrothers}
-               onChange={handleUnMarriedBrothers}>
-            </input>
-         </div>
          <div className='form-group1'>
             <label htmlFor='marriedbrothers'>Marriedbrothers</label><br/><br/>
             <div className='marriedsisters'>
