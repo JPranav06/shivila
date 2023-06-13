@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/htps//JPranav06.github.io/shivila/static/css/main.13210ab8.css",
+    "main.js": "/htps//JPranav06.github.io/shivila/static/js/main.8bb891f4.js",
+    "static/media/Bride.png": "/htps//JPranav06.github.io/shivila/static/media/Bride.dc74f393ef5875ba16d9.png",
+    "static/media/Pic1.jpg": "/htps//JPranav06.github.io/shivila/static/media/Pic1.e1c20b479ed869c8ce4c.jpg",
+    "static/media/Pic2.jpg": "/htps//JPranav06.github.io/shivila/static/media/Pic2.9af60db106d749c8a1cf.jpg",
+    "static/media/Groom.png": "/htps//JPranav06.github.io/shivila/static/media/Groom.b53adf080d92bf278c8d.png",
+    "index.html": "/htps//JPranav06.github.io/shivila/index.html",
+    "main.13210ab8.css.map": "/htps//JPranav06.github.io/shivila/static/css/main.13210ab8.css.map",
+    "main.8bb891f4.js.map": "/htps//JPranav06.github.io/shivila/static/js/main.8bb891f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13210ab8.css",
+    "static/js/main.8bb891f4.js"
+  ]
+}
