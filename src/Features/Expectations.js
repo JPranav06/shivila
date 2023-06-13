@@ -193,9 +193,6 @@ const handleSubmit = (e) => {
    navigate('/details');
    console.log(formData);
 };
-if (!expectationData) {
-   return null; 
-}
 
 
 return (
