@@ -20,9 +20,6 @@ const App = () => {
       <Route path='/find/Female' element={<Bride/>}/>
       <Route path='/find/Male' element={<Groom/>}/>
       <Route path='/details' element={<Details/>}/>
-
-
-
       </Routes>
     </Router>
   );
