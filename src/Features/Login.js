@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 const Login = () => {
 const navigate = useNavigate();
+const handleRegister = () => {
+   navigate('/register')
+}
 const [formData, setFormData] = useState({
 email: '',
 password: '',
@@ -82,9 +85,7 @@ return (
          <div className='exist'>
             <h2>
                Dont Have an Account?
-               <a href='/register'>
-               <span className='span1'>Register</span>
-               </a>
+               <span className='span1' onClick={handleRegister}>Register</span>
             </h2>
          </div>
       </div>
