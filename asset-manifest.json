@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/shivila/static/css/main.ed178644.css",
-    "main.js": "/shivila/static/js/main.9855936e.js",
+    "main.js": "/shivila/static/js/main.2f360073.js",
     "static/media/Bride.png": "/shivila/static/media/Bride.dc74f393ef5875ba16d9.png",
     "static/media/Pic1.jpg": "/shivila/static/media/Pic1.e1c20b479ed869c8ce4c.jpg",
     "static/media/Pic2.jpg": "/shivila/static/media/Pic2.9af60db106d749c8a1cf.jpg",
     "static/media/Groom.png": "/shivila/static/media/Groom.b53adf080d92bf278c8d.png",
     "index.html": "/shivila/index.html",
     "main.ed178644.css.map": "/shivila/static/css/main.ed178644.css.map",
-    "main.9855936e.js.map": "/shivila/static/js/main.9855936e.js.map"
+    "main.2f360073.js.map": "/shivila/static/js/main.2f360073.js.map"
   },
   "entrypoints": [
     "static/css/main.ed178644.css",
-    "static/js/main.9855936e.js"
+    "static/js/main.2f360073.js"
   ]
 }
