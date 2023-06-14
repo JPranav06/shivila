@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shivila/static/css/main.a039bc1d.css",
-    "main.js": "/shivila/static/js/main.d1775688.js",
+    "main.css": "/shivila/static/css/main.5aa8c068.css",
+    "main.js": "/shivila/static/js/main.c9a7c9cd.js",
     "static/media/Bride.png": "/shivila/static/media/Bride.dc74f393ef5875ba16d9.png",
     "static/media/Pic1.jpg": "/shivila/static/media/Pic1.e1c20b479ed869c8ce4c.jpg",
     "static/media/Pic2.jpg": "/shivila/static/media/Pic2.9af60db106d749c8a1cf.jpg",
     "static/media/Groom.png": "/shivila/static/media/Groom.b53adf080d92bf278c8d.png",
     "index.html": "/shivila/index.html",
-    "main.a039bc1d.css.map": "/shivila/static/css/main.a039bc1d.css.map",
-    "main.d1775688.js.map": "/shivila/static/js/main.d1775688.js.map"
+    "main.5aa8c068.css.map": "/shivila/static/css/main.5aa8c068.css.map",
+    "main.c9a7c9cd.js.map": "/shivila/static/js/main.c9a7c9cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.a039bc1d.css",
-    "static/js/main.d1775688.js"
+    "static/css/main.5aa8c068.css",
+    "static/js/main.c9a7c9cd.js"
   ]
 }
