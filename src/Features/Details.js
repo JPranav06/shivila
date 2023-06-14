@@ -64,7 +64,7 @@ const Details = () => {
     <div className='head'>
       <div className='details'>
         <div className='details-content'>
-          <button onClick={handleSubmit}>Save and Move</button>
+          <button onClick={handleSubmit}>Click Me to Find Your Pair</button>
 
           <div className='tableheading'>
             <h2>Personal Details</h2>

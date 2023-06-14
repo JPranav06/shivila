@@ -58,12 +58,6 @@
 }
 
 @media (max-width: 768px) {
-  .head{
-    float: left;
-    width:50%;
-  }
-
-
   .details {
     align-items: flex-start;
     padding: 20px;
@@ -76,5 +70,24 @@
 
   .table {
     overflow-x: auto;
+  }
+
+  .tableheading {
+    text-align: center;
+  }
+
+  .head {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .details table {
+    font-size: 14px;
+  }
+
+  .details th,
+  .details td {
+    padding: 10px 12px;
   }
 }
