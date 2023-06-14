@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import './Profilecreate.css';
-import Header from '../Components/Header';
 
 const Profilecreate = () => {
 
@@ -102,7 +101,6 @@ const casteOptions = ['Select', 'Adaviyar', 'Agri', 'Ahirwar', 'Ahluwalia', 'Anj
 
   return (
     <div className='Profilecreatepage'>
-      <Header />
       <div className='personaldetails'>
         <div className='heading'>
           <h2>Personal Details</h2>
@@ -121,7 +119,7 @@ const casteOptions = ['Select', 'Adaviyar', 'Agri', 'Ahirwar', 'Ahluwalia', 'Anj
               <label htmlFor='lastName'>Last Name</label><br/><br/>
               <input type='text' id='lastName' name='lastName' defaultValue={""} />
             </div>
-            <div className='form-group'>
+            <div className='profilegroupgender'>
               <label htmlFor='gender'>Gender</label><br/><br/>
               <select id='gender' name='gender' defaultValue={""}>
                 <option value=''>Select</option>
@@ -130,9 +128,9 @@ const casteOptions = ['Select', 'Adaviyar', 'Agri', 'Ahirwar', 'Ahluwalia', 'Anj
                 <option value='Other'>Other</option>
               </select>
             </div>
-            <div className='profilegroup'>
+            <div className='profilegroupname'>
               <label htmlFor='profileName'>Profile Name</label><br/><br/>
-              <button className='linkbutton' style={{padding:"1em"}}>http://localhost:3000/profile/create/</button>
+              <button className='linkbutton'>http://localhost:3000/profile/create/</button>
               <input type='text' id='profileName' name='profileName' value={inputValue} onChange={handleChange} />
             </div>
             <div className='form-group'>
@@ -255,7 +253,7 @@ const casteOptions = ['Select', 'Adaviyar', 'Agri', 'Ahirwar', 'Ahluwalia', 'Anj
                 <option value='Occasionally'>Occasionally</option>
               </select>
             </div>
-            <div className='profilegroup' style={{width:'100%'}}>
+            <div className='profilegroupreg'>
               <label htmlFor='registeredby'>Registered By</label><br/><br/>
               <select id='registeredby' name='registeredby' style={{width:'3  0%'}} defaultValue={""}>
                 {registered.map((option) => (

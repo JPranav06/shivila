@@ -1,7 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from '../Components/Header';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
@@ -46,7 +45,6 @@ password: '',
 };
 return (
 <div className='loginpage'>
-   <Header />
    <div className='login-container'>
       <div className='formsubmit'>
          <div className='heading'>

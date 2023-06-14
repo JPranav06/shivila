@@ -112,7 +112,7 @@ const Educationdetails = () => {
               <button className='rupees'>₹</button>
             </div>
           </div>
-          <div className='form-group'>
+          <div className='profilegroupedu'>
             <label htmlFor='worklocation'>Work Location</label>
             <br />
             <br />
@@ -125,7 +125,7 @@ const Educationdetails = () => {
               onChange={handleWorkLocationChange}
             />
           </div>
-          <div className='profilegroup1'>
+          <div className='profilegroup1edu'>
             <label htmlFor='nri'>NRI</label>
             <br />
             <br />

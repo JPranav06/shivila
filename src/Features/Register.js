@@ -1,6 +1,5 @@
 // Register.js
 import React, { useState } from 'react';
-import Header from '../Components/Header';
 import './Register.css';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -64,7 +63,7 @@ const Register = () => {
 
   return (
     <div className='Registerpage'>
-      <Header />
+
       <div className='Register-container'>
         <div className='formsubmit'>
           <div className='heading'>

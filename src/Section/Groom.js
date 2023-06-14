@@ -1,7 +1,7 @@
 import React from 'react';
 import './Groom.css';
 import GroomImage from "../Assets/Groom.png";
-import Header from '../Components/Header';
+
 import { useEffect,useState } from 'react';
 
 const Groom = () => {
@@ -25,7 +25,6 @@ const Groom = () => {
 
   return (
     <div>
-      <Header />
       <div className='Groom-section'>
         <div className="card">
           <img src={GroomImage} className="card-img-top" alt="Groom" />

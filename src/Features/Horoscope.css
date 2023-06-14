@@ -1,11 +1,11 @@
 .horoscope-details {
-    background-color: white;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 3em;
-    margin-left: 15em;
-    padding: 2em;
-    }
+  background-color: white;
+  width: 75%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 3em;
+  margin-left: 12em;
+  padding: 2em;
+}
     .horoscope-details-content{
       background-color: white;
       width: 100%;
@@ -60,3 +60,60 @@
         opacity: 1;
       }
     }
+/* Tablet - 600px */
+@media (max-width: 600px) {
+  .horoscope-details {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
+  }
+}
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .horoscope-details {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
+  }
+}
+/* Laptop - 900px */
+@media (max-width: 900px) {
+  .horoscope-details {
+    width:85%;
+    margin-left:0%;
+
+  }
+
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
+}
+@media (min-width: 900px) {
+  .horoscope-details {
+    width:75%;
+    margin-left:10%;
+    margin-right: 10%;
+
+  }
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
+}

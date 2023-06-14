@@ -53,9 +53,9 @@
   width: 100%;
 }
 
-.form-group1 {
+.form-group0 {
   float: left;
-  width: 100%;
+  width:22%;
   margin-left: 0.4em;
   margin-top: 1em;
   color: black;
@@ -87,21 +87,62 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 600px) {
   .family-details {
     width: 90%;
     margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .form-group,
-  .form-group1 {
-    flex-basis: 100%;
+  .form-group {
+    flex-basis: 50%;
   }
+}
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .family-details {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
+  }
+}
+/* Laptop - 900px */
+@media (max-width: 900px) {
+  .family-details {
+    width:85%;
+    margin-left:0%;
+
+  }
+
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
+}
+@media (min-width: 900px) {
+  .family-details {
+    width:75%;
+    margin-left:10%;
+    margin-right: 10%;
+
+  }
+  .form-group {
+    flex: 100%;
+  }
+}
+.personalgroup{
+  margin-top: 1em;
 }
 .profilegroup{
-  width:60%
-}
-
-.profilegroup input{
-  width:100%;
+  float: left;
+  width: 66%;
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import './Bride.css';
 import Boy from "../Assets/Bride.png";
-import Header from '../Components/Header';
+
 
 const Bride = (props) => {
   const { personalDetailsData } = props;
 
   return (
     <div>
-      <Header />
+
       <div className='Bride-section'>
         <div className="card">
           <img src={Boy} className="card-img-top" alt="Bride" />

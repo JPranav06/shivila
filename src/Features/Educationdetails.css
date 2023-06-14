@@ -70,14 +70,28 @@
 
 .profilegroup {
   float: left;
-  width: 65%;
+  width: 75%;
 }
 
 .profilegroup input[type='text'] {
   width: 80%;
   padding: 1em;
 }
-
+.profilegroupedu{
+  float: left;
+  width:45%;
+}
+.profilegroupedu input[type="text"]{
+width:60%;
+padding: 1em;
+}
+.profilegroup1edu{
+  float: left;
+  width: 50%;
+}
+.profilegroup1edu{
+  margin-top: 1em;
+}
 .personalsave {
   display: flex;
   justify-content: center;
@@ -88,45 +102,60 @@
   animation: blink 2s infinite;
   color: red;
 }
-
-@media screen and (max-width: 768px) {
+/* Tablet - 600px */
+@media (max-width: 600px) {
   .education-details {
-    width: 100%;
-    margin-left: 0;
-    padding: 1em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .detail-form {
-    flex-direction: column;
-  }
-
-  .education-details-content.form-group {
-    flex-basis: 100%;
-  }
-
-  .profilegroup {
-    width: 100%;
+  .form-group {
+    flex-basis: 50%;
   }
 }
-
-@media screen and (max-width: 480px) {
+/* Tablet - 768px */
+@media (max-width: 768px) {
   .education-details {
-    padding: 0.5em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
   }
 }
+/* Laptop - 900px */
+@media (max-width: 900px) {
+  .education-details {
+    width:85%;
+    margin-left:0%;
 
-.profilegroup1 select {
-  background-color: #f0f3f5;
-  padding: 0.3em;
-  color: black;
-  font-weight: 400;
-  padding: 1em;
-  width: 15em;
+  }
+
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
 }
+@media (min-width: 900px) {
+  .education-details {
+    width:75%;
+    margin-left:10%;
+    margin-right: 10%;
 
-.profilegroup1 {
-  float: left;
-  width: 65%;
-  margin-left: 2em;
-  margin-top:1em ;
+  }
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
 }

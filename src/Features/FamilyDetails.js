@@ -221,7 +221,7 @@ return (
             <label htmlFor='relativessurname'>Relative's SurNames</label><br/><br/>
             <input type='text' name='relativessurname' id='relativessurname' placeholder="Comma seperated Relatives Surname (Bhosale,Khale,Tendulkar,etc)" onChange={handleRelativesSurname}/>
          </div>
-         <div className='form-group1'>
+         <div className='form-group0'>
   <label htmlFor='marriedbrothers'>Married Brothers</label><br/><br/>
   <div className='marriedsisters'>
     <input 
@@ -235,7 +235,7 @@ return (
   </div>
 </div>
 
-         <div className='form-group1'>
+         <div className='form-group0'>
             <label htmlFor='marriedbrothers'>Marriedbrothers</label><br/><br/>
             <div className='marriedsisters'>
                <input 
@@ -248,7 +248,7 @@ return (
                </input>
             </div>
          </div>
-         <div className='form-group1'>
+         <div className='form-group0'>
             <label htmlFor='unmarriedsisters'>Unmarried Sisters</label><br/><br/>
             <div className='marriedsisters'>
                <input 
@@ -262,7 +262,7 @@ return (
                </input>
             </div>
          </div>
-         <div className='form-group1'>
+         <div className='form-group0'>
             <label htmlFor='marriedsisters'>Married Sisters</label><br/><br/>
             <div className='marriedsisters'>
                <input 

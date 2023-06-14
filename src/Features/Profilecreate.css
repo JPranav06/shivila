@@ -4,12 +4,12 @@
   width: 100%;
   background-color: #f0f3f5;
 }
-
 .personaldetails {
   background-color: white;
-  width: 80%;
+  width: 75%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-left: 15em;
+  margin-top: 0em;
+  margin-left:12em;
   padding: 2em;
 }
 .form-group input[type='text'] {
@@ -57,7 +57,34 @@ word-spacing: 0px;
   color: silver;
   font-weight: 700; /* Change the color to your preferred color */
 }
-
+.profilegroupgender{
+  float: left;
+  width: 30%;
+}
+.profilegroupgender select{
+  width:80%;
+  padding: 1em;
+}
+.profilegroupreg{
+  float: left;
+  width:100%;
+}
+.profilegroupreg select{
+  width:20%;
+  padding: 1em;
+}
+.profilegroupname{
+  float: left;
+  width: 65%;
+  margin-left:1.5em;
+}
+.profilegroupname input[type="text"]{
+  width:50%;
+  padding:0.5em;
+}
+.profilegroupname button{
+  padding: 0.5em;
+}
 #url1{
   color: black;
 }
@@ -126,5 +153,53 @@ color: #172B4D
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .personaldetails {
+    width:100%;
+    margin-right: 5%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
+  }
+}
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .personaldetails {
+    width: 80%;
+    margin-right: 10%;
+  }
+
+  .form-group {
+    flex-basis: 50%;
+  }
+}
+/* Laptop - 900px */
+@media (max-width: 900px) {
+  .personaldetails {
+    width:85%;
+    margin-left:0%;
+  }
+
+  .form-group {
+    flex: 100%;
+  }
+  .form-group input[type="text"],
+  .form-group select{
+    width:80% !important;
+
+  }
+}
+@media (min-width: 900px) {
+  .personaldetails {
+    width:75%;
+    margin-left:10%;
+    margin-right: 10%;
+
+  }
+  .form-group {
+    flex: 100%;
   }
 }

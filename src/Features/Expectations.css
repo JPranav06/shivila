@@ -1,9 +1,9 @@
 .expectations-details {
   background-color: white;
-  width: 80%;
+  width: 75%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3em;
-  margin-left: 15em;
+  margin-left: 12em;
   padding: 2em;
 }
 .expectations-heading {
@@ -295,8 +295,12 @@
   font-size: 20px;
 }
 
-
-
+@media (max-width:900px) {
+  .expectations-details{
+    width:85%;
+    margin-left:0%;
+  }
+}
 
 
 

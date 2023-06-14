@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className='header'>
       <h2>
-        <Link to='/'>Vadhu Var Suchak Kendra</Link>
+        <Link to='/shivila'>Vadhu Var Suchak Kendra</Link>
       </h2>
       <ul className='list'>
         <li>
